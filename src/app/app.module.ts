@@ -5,14 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
+import { FormsModule } from '@angular/forms';
+
+
+
 @NgModule({
+  
   declarations: [
     AppComponent,
     HeroesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, //this is new feature, which is different from the Angular website
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
